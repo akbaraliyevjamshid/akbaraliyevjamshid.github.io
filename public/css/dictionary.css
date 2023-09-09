@@ -1,0 +1,137 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+*{
+    font-family: "Poppins", sans-serif;
+}
+body {
+    background-color: blueviolet;
+}
+.container {
+    background-color: #ffffff;
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    padding: 80px 50px;
+    border-radius: 15px;
+}
+
+.search-box {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.search-box input {
+    padding: 5px;
+    width: 70%;
+    border: none;
+    outline: none;
+    border-bottom: 3px solid blueviolet;
+    font-size: 16px;
+}
+/* qdrish knopkasi  */
+.search-box button {
+    padding: 15px 0;
+    width: 25%;
+    background-color: blueviolet;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+/* qogani knopka boslgandan 0keyn! */
+.result {
+    position: relative;
+}
+.result h3 {
+    font-size: 32px;
+    color: #000;
+}
+.result .word {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+}
+.result button {
+    background-color: transparent;
+    color: blueviolet;
+    border: none;
+    outline: none;
+    font-size: 18px;
+}
+.result .details {
+    display: flex;
+    gap: 10px;
+    color: gray;
+    margin: 5px 0 20px 0;
+    font-size: 14px;
+}
+.word-meaning {
+    color: blueviolet;
+}
+
+
+.word-example {
+    color: #000;
+    font-style: italic;
+    border-left: 5px solid blueviolet;
+    padding-left: 20px;
+    margin-top: 30px;
+}
+.xato {
+    margin-top: 80px;
+    text-align: center;
+}
+
+
+/* media  ////// */
+
+
+@media  (min-width: 350px){
+    .container {
+        background-color: #ffffff;
+        width: 250px;
+        height: 250px;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        left: 50%;
+        padding: 30px 20px;
+        border-radius: 15px;
+    }
+    .result h3 {
+        margin-top: -60px;
+        font-size: 20px;
+        color: #000;
+    }
+
+
+}
+
+
+
+@media  (max-width: 420px){
+    .container {
+        background-color: #ffffff;
+        width: 350px;
+        height: 350px;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        
+        left: 50%;
+        padding: 40px 20px;
+        border-radius: 15px;
+    }
+    .result h3 {
+        
+        font-size: 25px;
+        color: #000;
+    }
+}
+
